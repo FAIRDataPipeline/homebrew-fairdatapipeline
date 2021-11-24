@@ -9,6 +9,4 @@ jobs:
       - name: Install CLI
         run: brew install fair-cli
       - name: Test install
-        run: |
-          fair registry install
-          fair init --ci
+        run: fair --help
