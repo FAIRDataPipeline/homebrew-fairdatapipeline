@@ -1,0 +1,10 @@
+name: FAIR Data Pipeline Homebrew Formulae
+on: [push]
+jobs:
+  fair-cli:
+    runs-on: macos-latest
+    steps:
+      - name: Set Tap
+        run: brew tap fairdatapipeline/fairdatapipeline
+      - name: Install CLI
+        run: brew install fair-cli
